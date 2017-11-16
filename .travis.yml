@@ -1,0 +1,20 @@
+sudo: required
+
+language: node_js
+
+node_js:
+  - "node"
+  - "8"
+
+services:
+  - docker
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      docker build -t "$DOCKER_IMAGENAME" .;
+      docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+      docker push "$DOCKER_IMAGENAME";
+    fi
+
+script:
+  - npm test

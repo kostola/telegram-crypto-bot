@@ -1,0 +1,29 @@
+{
+  "name": "telegram-crypto-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot about cryptocurrencies",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostola/telegram-crypto-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "cryptocurrencies"
+  ],
+  "author": "Alessandro Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kostola/telegram-crypto-bot/issues"
+  },
+  "homepage": "https://github.com/kostola/telegram-crypto-bot#readme",
+  "dependencies": {
+    "node-rest-client": "^3.1.0",
+    "node-telegram-bot-api": "^0.29.0"
+  }
+}
